@@ -1,0 +1,44 @@
+!Modo EXEC
+enable
+    !Configuração de data e hora
+    clock set 14:35:00 April 28 2025
+    !Modo de configuração Global
+    configure terminal
+        !Nome do Switch
+        hostname sw-01
+        !Segurança de senhas
+        service password-encryption
+        !Marcação de data e hora nos Logs
+        service timestamps log datetime msec 
+        !Tamanho do Log
+        logging buffered 4096
+       !Desligar DNS
+        !Mensagem do Dia ASCII
+        banner motd #AVISO: Acesso autorizado somente a funcionarios#
+        !Segurança no Enable
+        enable  secret 123@senac
+        !Criar usuário e senhas
+        usarname senac secret 123@senac
+        usarname henrique password 123@senac
+        username admin privilege 15 secret 123@senac
+        !Desabilitar o CDP e o LLDP
+        no cdp run
+        no lldp run
+        !Acessar a porta console
+        line console 0
+            !Autenticação local
+            login local
+            !Autenticação da porta
+            password 123@senac
+            !Habilitar sincronismo dos LOGS
+            logging synchronous
+            !Tempo de inatividade
+            exec-timeout 5 30
+
+          !Sair de todos os níveis
+            end
+    !Salvar as configurações
+    copy running-config startup-config
+    --------------------------------------------------------------------
+    !Visualizar as configurações
+    

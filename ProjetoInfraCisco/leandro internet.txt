@@ -1,0 +1,70 @@
+Conjunto de regras para formatação e processamentos de dados, é uma linguagem comum para computadores. Os computadores dentro da rede podem usar softwares e hardwares diferentes porém, esses prtocolos permitem que eles se comuniquem entre eles, indenpendente de qualquer diferença.
+
+
+Conjunto de regras ou protocolo, para roteamento e endereçamento de pacotes de dados para que eles possam viajar pelas redes e chegar ao destino correto. As informções de IP [PROTOCOLO DE INTERNET] são anexadas a cada pacote e essas informações ajudam os roteadores a enviar os pacotes para o lugar certo.
+
+
+IP não processa a ordem dos pacotes nem verifica erros. Essa funcionalidade exige outro protocolo, normalmente, o Protocolo de Controle de Transmissão (TCP). A relação TCP/IP é semelhante a enviar uma mensagem em forma de quebra-cabeça pelo correio. A mensagem está escrita e o quebra-cabeça está dividido em peças. 
+Cada peça é enviada por uma rota postal diferente, e umas demoram mais que outras. Quando as peças do quebra-cabeça chegam ao destino após percorrer caminhos diferentes, elas podem estar fora de ordem.
+O TCP pode ser considerado como o montador de quebra-cabeça do outro lado, que junta as peças na ordem certa, pede que as peças que faltam sejam reenviadas e informa ao remetente que o quebra-cabeça foi recebido. O TCP mantém a conexão com o remetente desde antes da primeira peça do quebra-cabeça ser enviada até após o envio da peça final.
+
+
+IPX/SPX (abreviação de Internetwork Packet Exchange/Sequenced Packet Exchange) é um conjunto de protocolos de rede extintos, desenvolvido pela Novell para suas redes NetWare. O IPX/SPX foi suportado até a era do Windows XP, com os sistemas operacionais posteriores migrando para o moderno conjunto de protocolos TCP/IP.
+Hoje, o IPX/SPX foi praticamente relegado à história da TI como uma alternativa inicial ao TCP/IP. Ele está presente apenas em sistemas legados selecionados que não conseguiram fazer a transição para o TCP/IP devido a limitações tecnológicas.
+
+O IPX/SPX é composto por dois protocolos que trabalham em conjunto: o IPX é o protocolo da camada de rede responsável por endereçar e rotear pacotes entre computadores em uma rede Novell NetWare, enquanto o SPX opera na camada de transporte para entregar os pacotes entre dispositivos.
+
+
+Criado pela Apple.
+Usado para descobrir dispositivos na rede (como impressoras, outros computadores, etc.).
+Windows pode usar Bonjour se o software for instalado (muitos apps da Adobe e o iTunes instalam Bonjour no Windows).
+Dispositivos Android e Linux também podem interagir com ele se configurados.
+Alguns pacotes Apple podem ser usados em dispositivos com Windows, desde que o sistema tenha suporte aos protocolos ou softwares envolvidos.
+
+
+(ICMP) é um protocolo da camada de rede usado por dispositivos de rede para diagnosticar problemas de comunicação de rede. 
+O ICMP é usado principalmente para determinar se os dados estão chegando ou não ao destino pretendido em tempo hábil. Comumente, o protocolo ICMP é usado em dispositivos de rede, como roteadores
+
+
+Um ataque de Ping da morte (PoD) é um ataque de negação de serviço (DoS) em que o invasor visa interromper uma máquina alvo enviando um pacote maior que o tamanho máximo permitido, fazendo com que a máquina visada trave ou falhe
+
+
+A interface de rede é um componente essencial em qualquer dispositivo conectado à internet. 
+Ela permite a comunicação entre o dispositivo e a rede, seja ela local ou global. 
+A interface de rede é responsável por transmitir e receber dados, garantindo a conectividade e a troca de informações entre os dispositivos.
+
+
+LAN – Local Area Network
+WAN – Wide Area Network
+MAN – Metropolitan Area Network
+RAN – Radio Access Network
+CAN – Controller Area Network (ou "poder" em inglês)
+PAN – Personal Area Network
+SAN – Storage Area Network
+WLAN – Wireless Local Area Network
+
+
+LAN- pequena área, switches, cabos Ethernet, geralmente alta e rápida, menos complexa e mais simples.
+WAN- Grande área, roteadores, linhas telefonicas, fibra ótica, pode variar dependendo da tecnologia e disatãncia, mais complexa e com maior infraestrutura.
+
+
+Quando o tipo de comunicação é Half-Duplex, na realidade só um dispositivo pode usar o meio de comunicação para comunicar… se houvesse comunicação em simultâneo, entre 2 ou mais máquinas ligadas a um Hub, 
+estaríamos a presenciar uma colisão (acontece quando 2 equipamentos transmitem em simultâneo num meio partilhado, aumentando a amplitude do sinal elétrico transmitido).
+
+
+CSMA/CD é um método de acesso à rede usado em redes Ethernet para lidar com colisões.
+Quando um dispositivo deseja transmitir dados sobre a rede, ele primeiro ouve o meio para verificar se está ocioso (senso da transportadora).
+Se o meio estiver ocioso, o dispositivo começará a transmitir.No entanto, se outro dispositivo começar a transmitir simultaneamente, ocorre uma colisão.Nesses casos, a CSMA/CD emprega detecção de colisão.
+Ele continua transmitindo por uma curta duração para garantir que a colisão seja detectada por todos os dispositivos na rede.
+Depois que uma colisão é detectada, todos os dispositivos de transmissão param, aguardam um período aleatório de tempo e tentam retransmitir os dados.
+
+
+
+Um hub de rede é um dispositivo de rede básico que conecta vários Ethernet dispositivos, fazendo com que atuem como um único segmento de rede. 
+Os hubs funcionam na camada física (camada 1) do Modelo OSI e transmitem pacotes de dados para todos os dispositivos conectados, independentemente do destinatário pretendido. 
+Eles recebem pacotes de dados (pedaços) de um dispositivo e transmiti-los para todos os outros dispositivos conectados sem filtragem ou roteamento de pacotes de dados.
+
+
+Um switch de rede conecta dispositivos dentro de uma rede (geralmente uma rede local ou LAN*) e encaminha pacotes de dados de e para esses dispositivos. 
+Ao contrário de um roteador, um switch só envia dados para o único dispositivo ao qual se destina (que pode ser outro switch, um roteador ou o computador de um usuário), não para redes de vários dispositivos.
+
